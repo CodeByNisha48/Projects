@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #1e81b0;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            
+        }
+        .container{
+            height: 480px;
+            width: 400px;
+            background-color: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        input{
+            background-color: rgb(240, 236, 236);
+            padding: 15px; 
+            border-radius: 6px; 
+            width: 380px; 
+            border: 2px;
+            
+        }
+        select{
+           background-color: rgb(240, 236, 236); 
+           padding: 15px; 
+           border-radius: 6px; 
+           width: 410px; 
+           border: 2px; 
+        }
+        textarea{
+            background-color: rgb(240, 236, 236); 
+            padding: 15px; 
+            border-radius: 6px; 
+            width: 380px; 
+            border: 2px;
+            
+        }
+        
+        button{
+            background-color: #005c7a;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: #00485f;
+        }
+        h1{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h1>Registration Form</h1>
+            <form action="">
+                <input type="text" placeholder="Name*" required><br><br>
+                <input type="email" placeholder="Email*" required><br><br>
+                <input type="phone" placeholder="Phone*" required><br><br>
+                <select required>
+                    <option value="">Subject*</option>
+                    <option value="c++">C++</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                </select><br><br>
+                <textarea  placeholder="Message*" required></textarea><br><br>
+                <button type="submit">submit</button>
+            </form>
+        </center>
+    </div>
+</body>
+</html>
