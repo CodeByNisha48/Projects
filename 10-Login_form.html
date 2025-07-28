@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #154c79;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+
+        }
+        .Container{
+            background-color: #ecf0f1;
+            height: 350px;
+            width: 350px;
+            border-radius: 20px;
+            box-shadow:0px 10px 20px rgba(12, 11, 11, 0.4);;
+            padding: 30px;
+        }
+        h2{
+            text-align: center;
+            color: rgb(70, 62, 62);  
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .submit{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button{
+            padding: 10px 20px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+        }
+        a{
+            font-size: 12px;
+            color: rgb(70, 62, 62);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <h2>Please Login</h2>
+        <form action="">
+            <input type="text" placeholder="Enter UserName"><br><br><br><br>
+            <input type="text" placeholder="Enter Password"><br><br><br>
+        </form>
+        <div class="submit">
+            <button type="submit">Submit</button>
+            <a href="#">Forget your Password?</a>
+        </div>
+    </div>
+</body>
+</html>
