@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box {
+    position: relative;
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #160101;
+    background-color: darkmagenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+h1 {
+    z-index: 1;
+    color: white;
+    font-size: 2.5em;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    background-image: linear-gradient(180deg, rgb(2, 179, 155), rgb(168, 196, 6));
+    height: 130%;
+    animation-name: spinbox;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+@keyframes spinbox {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.box::after {
+    content: "";
+    position: absolute;
+    background: #0e0103;
+    inset: 5px;
+    border-radius: 15px;
+}
+.box:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 0px 25px rgba(0, 183, 255, 0.7), 
+                0px 0px 25px rgba(255, 48, 255, 0.7);
+}
